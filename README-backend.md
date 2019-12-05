@@ -1,23 +1,27 @@
 # Blue Ivory Group Software Engineer Challenge - Backend
 ## Introduction
-Create a simple Blackjack API using NodeJS and MongoDB
+Create a simple Blackjack API using Node.js and MongoDB
 
 ​
 ## Requirements
 ###  Game functionalities we like to see 
-- Create the MongoDB database Schema
-- Create a route to initiate the game, with a deck of 3 packs of cards (52x3), containing the data for each card
-- Create a route to draw cards to players from current deck
-- Create a route to draw cards to Dealer using a hand evaluation algorithm from current deck
-- Create a route to get the score for a given hand. 
-- Create a route to save the state after each rounds
-- Create a route to get the history for a given player
+Must be a RESTful HTTP API listening to port 8080 (or you can use another port instead and describe in the README)
+The API must implement endpoints with path, method, request and response body as specified
 
-Please note that we are not necessarily expecting you to build all requirements. Build as much as you can.
+- Create the MongoDB database Schema
+- Create an endpoint to initiate the game, with a deck of 3 packs of cards (52x3), returning shuffled deck, players initial cards
+- Create an endpoint to draw cards to specific player from current deck
+- Create an endpoint to draw cards to Dealer using a hand evaluation algorithm from current deck
+- Create an endpoint to save the state after each rounds
+- Create an endpoint to get the history for a given player
+
+Please note that we are not necessarily expecting you to build all requirements. Build as much as you can. We are not expecting you to build the full game with no mistakes on the rules. We allow rules to be broken if you are not able to build it in a decent amount of time. (Ace management can be tricky).
 
 ### Bonus:
 - ES6+
 - Type checking (Typescript…)
+- Chaining
+- Test Pyramid
 - mongo-unit
 
 ​### Other
@@ -39,7 +43,7 @@ If you are so inclined, you can deploy the application onto a remote server (e.g
 ​
 ## FAQ
 ### What frameworks/libraries can I use?
-> **NodeJs**, We judge your submission on engineering practices (over-engineering will be penalized).
+> ** Node.js**, We judge your submission on engineering practices (over-engineering will be penalized).
 ### How much time should I spend on completing this challenge?
 > You can work on your own schedule, but a complete solution is expected within seven days.
 ### Do I need to deploy somewhere?
